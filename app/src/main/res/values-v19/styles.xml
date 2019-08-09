@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar.TransparentStatusBar">
+        <item name="android:fitsSystemWindows">true</item>
+
+        <!--华为等手机android版本21及以上设置该值状态栏为半透明状态，并且android 6.0版本设置状态栏明暗的模式会失效，半透明的状态栏保证信号电源等图标可以看清... -->
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!--华为等手机设置导航栏透明则状态栏才能完全透明，如果内容区域不希望被导航栏遮挡还需要适配底部导航栏的高度，同时该设置会导致设置导航栏颜色失效 -->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar.TransparentStatusBar.ImmerseStatusBar">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar.TransparentStatusBar.ImmerseStatusBar">
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则状态栏是半透明颜色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
