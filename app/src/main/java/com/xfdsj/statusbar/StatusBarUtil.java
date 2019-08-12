@@ -20,6 +20,20 @@ import java.util.regex.Pattern;
 public class StatusBarUtil {
 
     /**
+     * 设置沉浸式的SystemUiVisibility
+     *
+     * @param activity 目标Activity
+     */
+    public static void setImmerseStatusBarSystemUiVisibility(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            int systemUiVisibility = activity.getWindow().getDecorView().getSystemUiVisibility();
+            systemUiVisibility |= View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
+            systemUiVisibility |= View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+            activity.getWindow().getDecorView().setSystemUiVisibility(systemUiVisibility);
+        }
+    }
+
+    /**
      * 增加View的paddingTop,增加的值为状态栏高度 (智能判断，并设置高度)
      *
      * @param context 目标Context
@@ -35,7 +49,6 @@ public class StatusBarUtil {
             }
         }
     }
-
 
     /**
      * 设置状态栏darkMode,字体颜色及icon变黑(目前支持MIUI6以上,Flyme4以上,Android M以上)
@@ -65,7 +78,6 @@ public class StatusBarUtil {
         darkModeForM(window, dark);
     }
 
-
     /**
      * android 6.0设置字体颜色
      *
@@ -84,7 +96,6 @@ public class StatusBarUtil {
             window.getDecorView().setSystemUiVisibility(systemUiVisibility);
         }
     }
-
 
     /**
      * 设置MIUI6+的状态栏的darkMode,darkMode时候字体颜色及icon
@@ -134,7 +145,6 @@ public class StatusBarUtil {
             Log.e("StatusBar", "darkIcon: failed");
         }
     }
-
 
     /**
      * 判断是否Flyme4以上
