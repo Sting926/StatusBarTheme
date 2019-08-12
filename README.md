@@ -11,8 +11,8 @@ Implementing immersive status bar through theme
 
 **先来看下效果：**
 | 系统版本 | 4.4 | 9.0|
-|:--|:--|:--|
-| 纯色 | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-pure-color.png" width="75%"/> |<img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pure-color.png" width="75%"/> |
+|:------------|:------------|:------------|
+| 纯色 | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-pure-color.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pure-color.png" width="75%"/> |
 |渐变色| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-gradient-color.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-gradient-color.png" width="75%"/>|
 | 图片| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-picture.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pic.png" width="75%"/> |
 |Fragment| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-fragment.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-fragment.png" width="75%"/> |
