@@ -1,7 +1,7 @@
 # StatusBarTheme
 Implementing immersive status bar through theme
 
-# 使用主题Theme实现Android沉浸式状态栏
+# [使用主题Theme实现Android沉浸式状态栏](https://blog.csdn.net/handsome_926/article/details/98961409)
 很早的时候，通过主题设置activity沉浸式，发现坑很多，就开始使用各种StatusBarUtils，放弃了主题修改沉浸式这种方式，不知道大家有没有同感。
 
 其实各种StatusBarUtils的做法其实也是通过判断系统版本然后设置主题属性，是一种比直接在设置主题滞后的一种方式。这里讲一种通用的主题加一点好理解的代码实现沉浸式主题，方便更好的理解沉浸式，而且很简单。
@@ -10,10 +10,10 @@ Implementing immersive status bar through theme
 
 | 系统版本 | 4.4 | 9.0|
 |:------------|:------------|:------------|
-| 纯色 | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-pure-color.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pure-color.png" width="75%"/> |
-|渐变色| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-gradient-color.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-gradient-color.png" width="75%"/>|
-| 图片| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-picture.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pic.png" width="75%"/> |
-|Fragment| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-fragment.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-fragment.png" width="75%"/> |
+| 纯色 | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-pure-color.png"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pure-color.png"/> |
+|渐变色| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-gradient-color.png"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-gradient-color.png"/>|
+| 图片| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-picture.png"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pic.png"/> |
+|Fragment| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-fragment.png"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-fragment.png"/> |
 
 ## 沉浸式主题属性
 接下来，先来熟悉一下有那些沉浸式主题的属性设置：
