@@ -9,13 +9,15 @@ Implementing immersive status bar through theme
 
 其实各种StatusBarUtils的做法其实也是通过判断系统版本然后设置主题属性，是一种比直接在设置主题滞后的一种方式。这里讲一种通用的主题加一点好理解的代码实现沉浸式主题，方便更好的理解沉浸式，而且很简单。
 
-**先来看下效果：**
+先来看下效果：
+
 | 系统版本 | 4.4 | 9.0|
 |:------------|:------------|:------------|
 | 纯色 | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-pure-color.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pure-color.png" width="75%"/> |
 |渐变色| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-gradient-color.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-gradient-color.png" width="75%"/>|
 | 图片| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-picture.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-pic.png" width="75%"/> |
 |Fragment| <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/4.4-fragment.png" width="75%"/> | <img src="https://github.com/Sting926/StatusBarTheme/blob/master/img/9.0-fragment.png" width="75%"/> |
+
 ## 沉浸式主题属性
 接下来，先来熟悉一下有那些沉浸式主题的属性设置：
 - `<item name="android:windowTranslucentStatus">true</item>` 这个属性可以使状态栏变透明，同时内容区域可以浸入状态栏下面，从android 4.4增加的新属性，开启了沉浸式主题的大门，所以沉浸式的最小sdk版本是19，但是在android 5.x即sdk 21版本以后该属性并不能保证状态栏完全透明（小米MUI系统是透明的，单独处理过），状态栏为半透明状态，在android 6.0版本上设置该值同时会导致设置状态栏明暗的模式失效，但是半透明的状态栏保证信号电源等图标可以看清...。
